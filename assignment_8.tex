@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+%\usepackage{tkz-euclide}% this needed for markings on trianlges with red markings
+\usetikzlibrary{shapes,shapes.multipart}
+\thispagestyle{empty}
+\begin{document}
+\title{Assignment 8}
+\author{Athar Javed}
+\maketitle
+
+\item{\textbf{Question 2.42:}}\\
+
+Construct ABCD, where $ AB=4, BC=5, CD=6.5, {\angle}B=105^{\circ}, {\angle}C=80^{\circ}$.\\
+
+\item{\textbf{Solution:}\vspace{4}\\
+\hspace{3} Given, AB=4, BC=5, CD=6.5, {\angle}B=105^{\circ}, {\angle}C=80^{\circ}.\\
+
+Now,\\
+
+\textbf{Steps of Construction.}
+
+$
+
+1: Draw a line AB=4 cm.\\
+
+2: From point B draw a line BC= 5 cm such that {\angle}ABC=105^{\circ}.\\
+
+3: From point C draw a line CD= 6.5 cm such that {\angle}BCD=80^{\circ}.\\
+
+4: Join DA and we get required ABCD.\\
+$
+
+\begin{center}
+\begin{tikzpicture}
+\path[thick,blue] (0,0)coordinate(A) -- (4,0)coordinate(B) -- (5.294,4.829)coordinate(C) -- (-1.181,5.396)coordinate(D);
+\draw[thick,blue] (A) -- (B) -- (C) -- (D) -- cycle;
+\node at (-0.3,-0.3){$A$};
+\node at (4,-0.3){$B$};
+\node at (5.4,5){$C$};
+\node at (-1.3,5.7){$D$};
+\end{tikzpicture}
+\end{center}\\
+\item{\textbf{Question 2.43:}}\\
+
+Construct DEAR with $ DE=4, EA=5, AR=4.5, {\angle}E=60^{\circ}, {\angle}A=90^{\circ}$.\\
+
+\item{\textbf{Solution:}}\\
+$
+
+Given, DE=4, EA=5, AR=4.5, {\angle}E=60^{\circ}, {\angle}A=90^{\circ}$.\\
+
+Now,\\
+
+\textbf{Steps of Construction.}
+
+$
+
+1: Draw a line DE=4 cm.\\
+
+2: From point E draw a line EA= 5 cm such that {\angle}DEA=60^{\circ}.\\
+
+3: From point A draw a line AR= 4.5 cm such that {\angle}EAR=90^{\circ}.\\
+
+4: Join RD and we get required DEAR.\\
+$
+
+\begin{center}
+\begin{tikzpicture}
+\path[thick,blue] (0,0)coordinate(D) -- (4,0)coordinate(E) -- (1.5,4.330)coordinate(A) -- (-2.397,2.0801)coordinate(R);
+\draw[thick,blue] (D) -- (E) -- (A) -- (R) -- cycle;
+\node at (-0.3,-0.3){$D$};
+\node at (4,-0.3){$E$};
+\node at (1.8,4.5){$A$};
+\node at (-2.5,2.3){$R$};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
